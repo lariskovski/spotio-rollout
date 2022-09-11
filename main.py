@@ -73,7 +73,7 @@ if __name__ == "__main__":
             if vng_confirmation.lower() == "y":
                 print(update_vng_image(launch_spec, AMI))
                 roll_confirmation = input(f"Confirm rollout initialization (y): ")
-                if vng_confirmation.lower() == "y":
+                if roll_confirmation.lower() == "y":
                     print(initiate_roll(cluster_id))
                     print(update_cluster(cluster_id, AMI))
         else:
